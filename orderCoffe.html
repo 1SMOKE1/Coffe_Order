@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/index.css">
+  <link rel="stylesheet" href="style/orderCoffe.css">
+</head>
+<body class="body-bg">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="link" id="btn-home">
+        Home
+      </a>
+      <span class="rightArrow">&#8594;</span>
+      <a href="chooseDrink.html" class="link" id="btn-chooseDrink">
+        Choose Drink
+      </a>
+      <span class="rightArrow">&#8594;</span>
+      <a href="#" class="link" id="btn-order">
+        Order
+      </a>
+      <span class="rightArrow pick">&#8594;</span>
+      <a href="table.html" class="link" id="btn-table">
+        Table of Orders
+      </a>
+    </nav>
+    <main class="main">
+      <h1 class="h1 title bold">Order Coffe page</h1>
+      <div class="main-content">
+        <div class="cup-size">
+          <img class="img-small img" src="assets/order/small.svg" alt="">
+          <p class="p bold">Small 10 грн <span class="count"></span></p>
+          <div class="btn__wrap bold">
+            <button class="btn btn_milk">Small with milk 18 грн</button><span class="count-option"></span>
+          </div>
+        </div>
+        <div class="cup-size">
+          <img class="img-middle img" src="assets/order/middle.svg" alt="">
+          <p class="p bold">Middle 15 грн <span class="count"></span></p>
+          <div class="btn__wrap bold">
+            <button class="btn btn_milk">Small with milk 23 грн</button><span class="count-option"></span>
+          </div>
+        </div>
+        <div class="cup-size">
+          <img class="img-big img" src="assets/order/big.svg" alt="">
+          <p class="p bold">Big 25 грн <span class="count"></span></p>
+          <div class="btn__wrap bold"> 
+            <button class="btn btn_milk">Small with milk 33 грн</button><span class="count-option"></span>
+          </div>
+        </div>
+      </div>
+      <div class="price">
+        <h1 class="h1 price__total bold">Ціна заказу: <span id="cost">0</span> грн</h1>
+        <button class="btn" id="clean">Очистити заказ</button>
+        <a href="table.html"><button class="btn" id="get-order-coffe">Перейти до таблиці заказів</button></a>
+      </div>
+    </main>
+  </div>
+  <script src="src/orderCoffe.js"></script>
+</body>
+</html>

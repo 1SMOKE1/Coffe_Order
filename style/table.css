@@ -1,0 +1,9 @@
+.main-content{
+  align-items: center;
+  flex-direction: column;
+}
+
+td{
+  border: 1px solid #ccc;
+  padding: 10px;
+}

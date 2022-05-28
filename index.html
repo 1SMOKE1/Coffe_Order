@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/common.css">
+  <link rel="stylesheet" href="style/index.css">
+</head>
+<body class="body-bg">
+  <div class="container">
+    <nav class="navbar">
+      <a href="index.html" class="link" id="btn-home">
+        Home
+      </a>
+      <span class="rightArrow pick">&#8594;</span>
+      <a href="chooseDrink.html" class="link" id="btn-chooseDrink">
+        Choose Drink
+      </a>
+      <span class="rightArrow">&#8594;</span>
+      <a href="order.html" class="link" id="btn-order">
+        Order
+      </a>
+      <span class="rightArrow">&#8594;</span>
+      <a href="table.html" class="link" id="btn-table">
+        Table of Orders
+      </a>
+    </nav>
+    <main class="main">
+      <h1 class="h1 title bold">Home page</h1>
+      <div class="name__wrap">
+        <label class="p label bold" for="name">Введіть своє ім'я</label>
+        <input type="text" id="name">
+      </div>
+        <div class="main-content">
+        <a class="btn" id="btn-start">Start Order</a>
+        <a class="btn" href="table.html">See order table</a>
+      </div>
+    </main>
+  </div>
+  <script src="src/index.js"></script>
+</body>
+</html>

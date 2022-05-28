@@ -1,0 +1,72 @@
+/* fonts */
+
+.h1{
+  font-size: 35px;
+}
+
+.p{
+  font-size: 20px;
+}
+
+.bold{
+  font-weight: 700;
+}
+
+/* btns */
+.link,
+.btn{
+  padding: 5px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  transition: all .3s ease;
+  background-color: rgb(122, 61, 61);
+  color: yellowgreen;
+  cursor: pointer;
+}
+
+.btn{
+  padding: 10px;
+}
+
+.link:hover,
+.btn:hover{
+  background-color: rgb(165, 119, 34);
+  color: rgb(122, 61, 61);
+}
+
+.link.active,
+.btn.active{
+  background-color: rgb(165, 119, 34);
+  color: rgb(122, 61, 61);
+}
+
+.img-small{
+  max-width: 100px;
+  max-height: 65px;
+  transition: all .3s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.img-middle{
+  max-width: 80px;
+  max-height: 100px;
+  transition: all .3s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.img-big{
+  max-width: 80px;
+  max-height: 100px;
+  transition: all .3s ease;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+.img-small:hover,
+.img-middle:hover,
+.img-big:hover{
+  transform: scale(1.1);
+}

@@ -1,0 +1,14 @@
+{
+  "name": "project1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "index.js": "tsc -w src/index.ts src/chooseDrink.ts src/orderCoffe.ts src/orderTea.ts src/orderCacao.ts src/table.ts",
+    "server": "lite-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

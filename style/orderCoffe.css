@@ -1,0 +1,23 @@
+.cup-size{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.price{
+  margin-top: 20px;
+  text-align: center;
+}
+
+.price__total{
+  margin-bottom: 20px;
+}
+
+.btn__wrap{
+  display: flex;
+  align-items: center;
+}
+
+.count-option{
+  margin-left: 5px;
+}
