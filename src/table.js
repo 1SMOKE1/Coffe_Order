@@ -13,12 +13,6 @@ var userInfo = [];
 var totalCount = localStorage.getItem('countArr');
 var totalCountOption = localStorage.getItem('countOptionArr');
 var tableStart = document.getElementById('table-start');
-function getCount(item, itemOption) {
-    item = JSON.parse(item);
-    itemOption = JSON.parse(itemOption);
-    var result = __spreadArray(__spreadArray([], item, true), itemOption, true);
-    return result.reduce(function (a, b) { return a + b; });
-}
 var User = /** @class */ (function () {
     function User(userName, userDrinks, userDrinksCost) {
         this.name = userName;
@@ -32,6 +26,12 @@ var User = /** @class */ (function () {
 }());
 window.onload = function () {
     btnTable.classList.add('active');
+    function getCount(item, itemOption) {
+        item = JSON.parse(item);
+        itemOption = JSON.parse(itemOption);
+        var result = __spreadArray(__spreadArray([], item, true), itemOption, true);
+        return result.reduce(function (a, b) { return a + b; });
+    }
     userInfo.push(localStorage.getItem('name'));
     userInfo.push(getCount(totalCount, totalCountOption));
     userInfo.push(localStorage.getItem('totalCost'));

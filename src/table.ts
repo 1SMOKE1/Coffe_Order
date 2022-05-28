@@ -6,12 +6,7 @@ const totalCountOption: string = localStorage.getItem('countOptionArr')
 const tableStart: any = document.getElementById('table-start');
 
 
-function getCount(item: any, itemOption: any){
-  item = JSON.parse(item);
-  itemOption = JSON.parse(itemOption);
-  let result: number[] = [...item, ...itemOption];
-  return result.reduce((a:number, b:number) => a + b)
-}
+
 
 
 class User{
@@ -34,7 +29,12 @@ class User{
 
 window.onload = () => {
   btnTable.classList.add('active')
-  
+  function getCount(item: any, itemOption: any){
+    item = JSON.parse(item);
+    itemOption = JSON.parse(itemOption);
+    let result: number[] = [...item, ...itemOption];
+    return result.reduce((a:number, b:number) => a + b)
+  }
   userInfo.push(localStorage.getItem('name'))
   userInfo.push(getCount(totalCount,totalCountOption))
   userInfo.push(localStorage.getItem('totalCost'));
